@@ -1,0 +1,45 @@
+from django.db import models
+from django.contrib.auth.models import User
+from django.urls import reverse
+from django_countries.fields import CountryField
+
+# Create your models here.
+class Questions(models.Model):
+    firstname = models.CharField(max_length=225)
+    lastname = models.CharField(max_length=225)
+    age = models.IntegerField()
+    parentsfirstname = models.CharField(max_length=225)
+    parentslastname = models.CharField(max_length=225)
+    city = models.CharField(max_length=225)
+    country = CountryField()
+    phone = models.IntegerField()
+    email = models.EmailField()
+    q1 = models.CharField(max_length=225)
+    q2 = models.CharField(max_length=225)
+    q3 = models.CharField(max_length=225)
+    q4 = models.CharField(max_length=225)
+    q5 = models.CharField(max_length=225)
+    q6 = models.CharField(max_length=225)
+    q7 = models.CharField(max_length=225)
+    q8 = models.CharField(max_length=225)
+    q9 = models.CharField(max_length=225)
+    q10 = models.CharField(max_length=225)
+    q11 = models.CharField(max_length=225)
+    q12 = models.CharField(max_length=225)
+    q13 = models.CharField(max_length=225)
+    q14 = models.CharField(max_length=225)
+    q15 = models.CharField(max_length=225)
+    q16 = models.CharField(max_length=225)
+    q17 = models.CharField(max_length=225)
+    q18 = models.CharField(max_length=225)
+    q19 = models.CharField(max_length=225)
+    q20 = models.CharField(max_length=225)
+    q21 = models.CharField(max_length=225)
+    q22 = models.CharField(max_length=225)
+    q23 = models.CharField(max_length=225)
+    q24 = models.CharField(max_length=225)
+    q25 = models.CharField(max_length=225)
+    q26 = models.CharField(max_length=225)
+    q27 = models.CharField(max_length=225)
+    q28 = models.CharField(max_length=225)
+

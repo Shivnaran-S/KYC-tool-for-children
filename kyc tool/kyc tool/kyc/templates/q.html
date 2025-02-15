@@ -1,0 +1,87 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KYC Tool</title>
+</head>
+<body>
+    KYC TOOL
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}<br />
+    <button> Submit </button>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let's Understand your Child</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0 40px 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 00vh;
+        }
+
+        .container {
+            width: 100%;
+            /* Adjusted width to expand container */
+            max-width: 1000px;
+            background: white;
+            padding: 20px 40px;
+            /* Increased padding on left and right sides */
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-sizing: border-box;
+        }
+
+        h1 {
+            text-align: center;
+            color: #007bff;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        form p {
+            margin: 20px 0;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Let's Understand your Child</h1>
+        <form method="POST">
+            {% csrf_token %}
+            {{ form.as_p }}<br />
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

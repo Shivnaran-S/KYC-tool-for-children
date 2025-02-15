@@ -1,0 +1,112 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KYC Tool</title>
+</head>
+<body>
+    <a href="{% url 'questions' %}" class="card-title">Take survey</a>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KYC Tool</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1,
+        h2 {
+            color: #007bff;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: white;
+            background-color: #007bff;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+
+        .important {
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Let's understand your child</h1>
+        <h2>Learner Circle's Know Your Child</h2>
+        <p>A small step towards understanding your child better.</p>
+        <p>This 28-item tool measures a child’s intelligence (6-15 years) across 7 intelligences:</p>
+        <ul>
+            <li>Linguistic-Verbal</li>
+            <li>Logical-Mathematical</li>
+            <li>Visual-Spatial</li>
+            <li>Bodily-Kinesthetic</li>
+            <li>Interpersonal-Social</li>
+            <li>Musical</li>
+            <li>Naturalist intelligence</li>
+        </ul>
+        <p>This tool is developed on the basis of Howard Gardner’s Theory of Multiple Intelligences proposed in 1983.
+        </p>
+        <p>In addition to Howard Gardner’s theory, multiple research literature in the area of intelligence has been
+            taken into account to develop this tool. It is an initiative from Learner Circle to help parents understand
+            the core strengths of their child through a proven-process.</p>
+        <p>The survey will lead children towards their areas of natural aptitude and intelligence.</p>
+
+        <h2>Important points to remember while taking the survey:</h2>
+        <ul>
+            <li class="important">Parents should not interfere with the choices selected by the child.</li>
+            <li class="important">Parents should help, only if the child does not understand the question.</li>
+            <li class="important">All questions have to be completed in one sitting.</li>
+        </ul>
+        <p>On submission, you will receive an email in 24 to 48 hours about the child's profile which will be analyzed
+            and developed by our expert panel.</p>
+        <p>You will also have an option to book a 15-minute appointment to have a discussion with a Child Psychologist
+            after you receive the report.</p>
+        <p>The results produced might vary on different days based on the mindset of the child or learning experience
+            that they have gone through recently. The assessment is in no way a final report of your child. It's an
+            indicative assessment done to enable parents to know their child better. Learner Circle is not responsible
+            for any decision that the parent takes based on the survey.</p>
+
+        <a href="{% url 'questions' %}" class="button">Begin Survey</a>
+    </div>
+    <footer>
+        &copy; All rights reserved - Learner Circle
+    </footer>
+</body>
+</html>
